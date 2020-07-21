@@ -34,7 +34,7 @@ Perform initial synchronization of DAV and IMAP services to check setup:
 Recursively copy all files in `~/.dotfiles/etc` into place:
 
     sudo cp -r ~/.dotfiles/etc/borgmatic /etc/
-    sudo cp -r ~/.dotfiles/etc/systemd/system /etc/systemd/system
+    sudo cp ~/.dotfiles/etc/systemd/system/* /etc/systemd/system/
 
 Then enable all the relevant services:
 
