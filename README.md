@@ -1,7 +1,7 @@
 # Backup server
 
-These are the dotfiles I use on my backup server, which takes automatic daily
-snapshots of my email, calendars, contacts, and Nextcloud/Syncthing shares.
+These are my backup server dotfiles, which take daily snapshots 
+of mail, calendars, contacts, and Nextcloud/Syncthing shares.
 
 ## Prerequisites
 
