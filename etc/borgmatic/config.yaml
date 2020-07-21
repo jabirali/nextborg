@@ -1,0 +1,16 @@
+location:
+    source_directories:
+        - /mnt/data
+        - /home/jabirali
+        - /home/syncing
+        - /etc
+        - /var/log/syslog*
+    repositories:
+        - /mnt/borg
+    exclude_if_present: .nobackup
+storage:
+    compression: lz4
+retention:
+    keep_daily: 7
+    keep_weekly: 4
+    keep_monthly: -1
