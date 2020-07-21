@@ -39,3 +39,5 @@ Recursively copy all files in `~/.dotfiles/etc` into place:
 Then enable all the relevant services:
 
     sudo systemctl enable syncthing.service offlineimap.service nextcloud.timer borgmatic.timer
+
+Remember to open all relevant ports with `sudo ufw allow` or `gufw`.
