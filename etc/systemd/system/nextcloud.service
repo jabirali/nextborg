@@ -1,0 +1,10 @@
+[Unit]
+Description=Nextcloud sync
+
+[Service]
+Type=simple
+User=syncing
+ExecStart=/home/syncing/.local/bin/nextcloud.sh
+
+[Install]
+WantedBy=multi-user.target

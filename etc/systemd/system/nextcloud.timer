@@ -1,0 +1,9 @@
+[Unit]
+Description=Nextcloud autosync
+
+[Timer]
+OnCalendar=*:0/30
+Unit=nextcloud.service
+
+[Install]
+WantedBy=multi-user.target
