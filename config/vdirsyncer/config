@@ -1,5 +1,3 @@
-# ~/.config/vdirsyncer/config
-
 [general]
 status_path = "~/.cache/vdirsyncer/"
 
