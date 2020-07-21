@@ -1,0 +1,41 @@
+# ~/.config/vdirsyncer/config
+
+[general]
+status_path = "~/.cache/vdirsyncer/"
+
+# Pairing different storages.
+[pair card]
+a = "local_card"
+b = "cloud_card"
+collections = ["from a", "from b"]
+conflict_resolution = "b wins"
+
+[pair cal]
+a = "local_cal"
+b = "cloud_cal"
+collections = ["from a", "from b"]
+conflict_resolution = "b wins"
+
+# Filesystem local storage.
+[storage local_cal]
+type = "filesystem"
+path = "/mnt/data/cal/"
+fileext = ".ics"
+
+[storage local_card]
+type = "filesystem"
+path = "/mnt/data/card/"
+fileext = ".vcf"
+
+# Nextcloud remote storage.
+[storage cloud_cal]
+type = "caldav"
+url = "https://nextcloud03.webo.hosting"
+username.fetch = ["command", "pass", "webo.hosting/username"]
+password.fetch = ["command", "pass", "webo.hosting/password"]
+
+[storage cloud_card]
+type = "carddav"
+url = "https://nextcloud03.webo.hosting"
+username.fetch = ["command", "pass", "webo.hosting/username"]
+password.fetch = ["command", "pass", "webo.hosting/password"]
