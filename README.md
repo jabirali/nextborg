@@ -14,7 +14,7 @@ The scripts and instructions here assume you have an Ubuntu server with:
 
 To get started, you first have to install some system dependencies:
 
-    sudo apt install borgmatic vdirsyncer offlineimap nextcloud-desktop-cmd syncthing ufw
+    sudo apt install borgmatic vdirsyncer offlineimap msmtp nextcloud-desktop-cmd syncthing ufw
 
 ## User setup
 
